@@ -4,7 +4,7 @@ using namespace std;
 
 class EspressoComponent : public DrinkComponent{
     public:
-        EspressoComponent();
+        EspressoComponent(){};
         void serveDrink();
 };
 

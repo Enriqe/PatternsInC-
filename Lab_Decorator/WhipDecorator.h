@@ -5,6 +5,20 @@
 #include <iostream>
 using namespace std;
 
-class WhipDecorator : public
+class WhipDecorator : public CondimentDecorator{
+    public:
+        WhipDecorator(DrinkComponent *drink) : CondimentDecorator(drink){};
+        void serveDrink();
+        void setWhip();
+};
+
+void WhipDecorator::serveDrink(){
+    CondimentDecorator::serveDrink();
+    setWhip();
+}
+
+void WhipDecorator::setWhip(){
+    cout << "[WHIP-DECOR] Serving whip to this drink..." << endl;
+}
 
 #endif
