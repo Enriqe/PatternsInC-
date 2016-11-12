@@ -1,6 +1,5 @@
 #ifndef MILK_DECORATOR_H
 #define MILK_DECORATOR_H
-
 #include "CondimentDecorator.h"
 #include <iostream>
 using namespace std;
@@ -18,6 +17,7 @@ void MilkDecorator::serveDrink(){
 }
 
 void MilkDecorator::setMilk(){
-    cout << "[MILK-DECOR] Serving milk to this drink" << endl;
+    cout << "[MILK-DECOR] Serving milk to this drink..." << endl;
 }
+
 #endif

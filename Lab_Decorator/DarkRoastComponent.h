@@ -4,7 +4,7 @@ using namespace std;
 
 class DarkRoastComponent : public DrinkComponent{
     public:
-        DarkRoastComponent();
+        DarkRoastComponent(){};
         void serveDrink();
 };
 
